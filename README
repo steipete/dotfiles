@@ -1,0 +1,12 @@
+These are my personal .dot files for bash.
+
+You get colors, git completion, git branch naming, rails shortcuts and much more.
+
+Some of the files are from http://github.com/slayer/dotfiles
+
+I assume that your files are in ~/.bashrc.d.
+
+Then symlink bash_profile and bashrc:
+
+ln -s .bashrc.d/.bashrc .bashrc
+ln -s .bashrc.d/.bash_profile .bash_profile
