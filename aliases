@@ -1,0 +1,22 @@
+#!/bin/sh
+
+alias ls='ls $LS_OPTIONS'
+alias ll='ls $LS_OPTIONS -lh'
+alias l='ls  $LS_OPTIONS -lAh'
+alias la='ls $LS_OPTIONS -lah'
+alias df='df -h'
+
+alias esx='exec screen -x'
+alias essh='exec ssh'
+alias ..="cd .."
+alias pu="pushd"
+alias po="popd"
+alias c=clear
+alias pps='ps -u "$USER" -o user,pid,ppid,pcpu,pmem,args'
+alias h=history
+alias q=exit
+alias mtr="mtr --curses" 
+alias grep="grep --exclude '*.git*' --exclude '*.svn*'"
+
+
+
