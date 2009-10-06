@@ -10,3 +10,6 @@ Then symlink bash_profile and bashrc:
 
 ln -s .bashrc.d/.bashrc .bashrc
 ln -s .bashrc.d/.bash_profile .bash_profile
+
+
+This is optimized for MAC OS X, but can be changed easily (for example change calls from *mate* to vim)
