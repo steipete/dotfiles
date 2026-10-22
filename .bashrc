@@ -45,8 +45,8 @@ BEGIN { split(substr(q,3),a," ") }
 { for( i in a ) $1 !~ a[i] && $1 = ""; if( $1 ) print $1 }
 ' $jfile 2>/dev/null
  # if we hit enter on a completion just go there (ugh, this is ugly)
- elif [[ "$*" =~ "/" ]]; then
-local x=$*; x=/${x#*/}; [ -d "$x" ] && cd "$x"
+ elif [[ "$*" == */* ]] && [ -d "$*" ]; then
+cd "$*"
  else
   # prefer case sensitive
   local cd=$(awk -v q="$*" -F"|" '
