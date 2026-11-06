@@ -19,6 +19,8 @@ j() {
 shift
   # we're in $HOME all the time, let something else get all the good letters
   [ "$*" = "$HOME" ] && return
+  # missing file: awk skips END, then mv installs the empty temp file
+  [ -f "$jfile" ] || : > "$jfile"
 awk -v q="$*" -F"|" '
 $2 >= 1 {
 if( $1 == q ) { l[$1] = $2 + 1; found = 1 } else l[$1] = $2
