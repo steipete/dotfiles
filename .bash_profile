@@ -29,7 +29,7 @@ fi
 # better support for git!
 . ~/.bashrc.d/misc-env.sh 
 . ~/.bashrc.d/aliases
-. ~/.bashrc.d/rails.sh
 . ~/.bashrc.d/path.sh 
 . ~/.bashrc.d/terminal.sh 
 . ~/.bashrc.d/git.sh
+. ~/.bashrc.d/rails.sh
